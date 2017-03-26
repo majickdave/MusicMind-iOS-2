@@ -33,7 +33,7 @@ class SendToFriendViewController: UIViewController {
         let time = String(currentDateTime.timeIntervalSinceReferenceDate)
         
         //  Store Naming Convention
-        let storageRef = FIRStorage.storage().reference(withPath: "videos/test"+time+".mov")
+        let storageRef = FIRStorage.storage().reference(withPath: "videos/testing_"+time+".mov")
         let uploadMetadata = FIRStorageMetadata()
         uploadMetadata.contentType = "video/quicktime"
         
